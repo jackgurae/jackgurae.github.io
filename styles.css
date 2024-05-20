@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header .icon .icon-text {
+    font-family: monospace;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+
+header .icon .highlight {
+    color: #f92672; /* Monokai pink color */
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.typing {
+    font-size: 1.5em;
+    color: #333;
+    font-family: monospace;
+    color: #f92672; /* Monokai pink color */
+}
+
+.cursor {
+    font-size: 1.5em;
+    color: #333;
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.section {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    body {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .sections {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .section {
+        width: 30%;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sections {
+        align-items: stretch;
+    }
+
+    .section {
+        flex: 1;
+    }
+}
