@@ -10,45 +10,89 @@
 
 <body>
     <header>
+        <div class="title-box">
+            <h1 class="title">Hi, my name is Jack<br> I'm a<br>
+                <span class="typing"></span><span class="cursor">|</span>
+            </h1>
+        </div>
         <div class="icon">
             <span class="icon-text">jack<span class="highlight">gu</span>.dev</span>
         </div>
-        <div class="title-box">
-            <h1 class="title">Hi, I'm Jack<br> I'm a<br>
-                <span class="typing"></span></span><span class="cursor">|</span>
-            </h1>
-        </div>
     </header>
     <main>
-        <section class="profile">
-            <img src="mumu_dunkin.gif" alt="Profile Picture">
-        </section>
         <div class="sections">
             <div id="about" class="section">
                 <h2>About Me</h2>
-                <p>I'm a seasoned data scientist and machine learning engineer with a passion for solving complex
-                    problems.<br> I have a strong background in Finance.<br>
-                    My tech skills include Python, SQL, machine learning, GenAI, Cloud architecture, and more.
+                <div class="profile">
+                    <img src="mumu_dunkin.gif" alt="Profile Picture">
+                </div>
+                <p>I am a seasoned data scientist and machine learning engineer with a robust background in finance.<br>
+                    Previously, I worked as a financial engineer on a derivatives trading desk. <br>
+                    My technical expertise spans Python, SQL, machine learning, Generative AI, cloud architecture, and
+                    more.
                 </p>
+                <div class="skill-list">
+                    <p>Machine learning | Generative AI | Cloud architecture | Finance</p>
+                    <p>Python | SQL | Docker | Streamlit | HTML/CSS/JS | Git | Linux</p>
+                </div>
+                <div class="links">
+                    <!-- link to my LinkedIn and GitHub profiles using icons -->
+                    <a href="https://www.linkedin.com/in/woraphont" target="_blank">
+                        <img src="assets/icons8-linkedin.svg" alt="LinkedIn">
+                    </a>
+                </div>
             </div>
             <div id="projects" class="section">
                 <h2>My Projects</h2>
-                <ul>
+                <ul class="project-list">
                     <li>
-                        <a href="https://genai.jackgu.dev/" target="_blank">GenAI App</a><span> - A collection of AI-powered web apps</span>
+                        <a href="https://genai.jackgu.dev/" target="_blank">GenAI App</a><span> - A collection of
+                            AI-powered web apps</span>
                     </li>
                     <li>
-                        <a href="" target="_blank">Project 2</a><span> - Description of project 2.</span>"
+                        <a href="https://github.com/jackgurae/financial_advisor_agent"
+                            target="_blank">financial_advisor_agent</a><span> - A financial advisor chatbot with
+                            tool-calling functionality running on
+                            Streamlit</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jackgurae/DS_project" target="_blank">DS_project</a><span> -
+                            A collection of data science projects when I was starting out</span>
+                    </li>
+                    <li>
+                        <a href="https://www.ecolofthotel.com" target="_blank">EcoLoft Hotel</a><span> -
+                            A hotel website I built with Wordpress. The hotel is a family business.</span>
                     </li>
                 </ul>
             </div>
-            <div id="contact" class="section">
-                <h2>Contact</h2>
-                <p>Woraphon Tontaweewong | jackgu.dev | <a href="mailto:jack.woraphon.t@gmail.com">jack.woraphon.t@gmail.com</a></p>
-
+            <div id="certificates" class="section">
+                <h2>Certificates</h2>
+                <ul class="certificate-list">
+                    <li>
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/PREZDUFG55HX"
+                            target="_blank">Deep
+                            Learning Specialization</a><span> - Coursera</span>
+                    </li>
+                    <li>
+                        <a href="https://www.datacamp.com/portfolio/woraphont" target="_blank">Datacamp
+                            Profile</a><span> - Certificates from Datacamp</span>
+                    </li>
+                    <li>
+                        <a href="https://www.kaggle.com/woraphont" target="_blank">My Kaggle Profile</a><span> -
+                            My Kaggle profile showing Certificates when I was starting out</span>
+                    </li>
+                </ul>
             </div>
-        </div>
     </main>
+    <footer>
+        <div id="contact" class="footer-section">
+            <!-- add github icon cdn link before the link -->
+            <p>Woraphon Tontaweewong |
+                <a href="https://github.com/jackgurae" target="_blank">github.com/jackgurae</a>
+                | <a href="mailto:jack.woraphon.t@gmail.com">jack.woraphon.t@gmail.com</a>
+            </p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 

@@ -4,13 +4,20 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: white;
     color: #333;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,9 +31,7 @@ header .icon .icon-text {
     color: white;
     padding: 5px;
     border-radius: 5px;
-    
 }
-
 
 header .icon .highlight {
     color: #f92672; /* Monokai pink color */
@@ -57,10 +62,18 @@ header h1 {
     100% { opacity: 1; }
 }
 
+main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
 .profile {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px 0px;
 }
 
 .profile img {
@@ -69,12 +82,19 @@ header h1 {
     border-radius: 50%;
     border: 2px solid #333;
 }
-
+.links {
+    padding: 10px;
+}
+.project-list, .certificate-list {
+    
+    text-align: left;
+    margin: 20px 0px;
+}
 .sections {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    width: 100%;
 }
 
 .section {
@@ -86,32 +106,58 @@ header h1 {
     text-align: center;
 }
 
+.skill-list {
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+a {
+    color: #f92672;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
 @media (min-width: 768px) {
-    body {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
 
     .sections {
-        flex-direction: row;
-        justify-content: space-around;
+        align-items: center;
+        max-width: 1200px;
     }
 
     .section {
-        width: 30%;
-        margin: 0 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        width: 80%;
+        margin: 10px 0;
+    }
+    .profile {
+        margin: 20px 20px;
+    }
+    .project-list, .certificate-list {
+        margin: 20px 20px;
     }
 }
 
-@media (min-width: 1024px) {
-    .sections {
-        align-items: stretch;
-    }
+footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    text-align: center;
+    position: relative;
+    flex: 0 0 auto;
+}
 
-    .section {
-        flex: 1;
+@media (min-width: 768px) {
+    footer {
+        position: sticky;
+        bottom: 0;
     }
 }
